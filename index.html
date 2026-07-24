@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
   :root{
@@ -408,7 +410,46 @@
     background:rgba(27,42,46,0.06);
     border:1px solid rgba(27,42,46,0.14);
     transition:transform .25s, background .25s, border-color .25s, color .25s;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
   }
+  .chip i{ font-size:14px; }
+
+  /* ---------- Tech badges (like GitHub README shields) ---------- */
+  .skill-badge{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.4px;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:8px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    transition:transform .25s;
+  }
+  .skill-badge:hover{ transform:translateY(-2px); }
+  .skill-badge i{ font-size:16px; color:#fff; }
+  .bg-python{background:#3776AB;}
+  .bg-cpp{background:#00599C;}
+  .bg-c{background:#5C6BC0;}
+  .bg-tensorflow{background:#FF6F00;}
+  .bg-pytorch{background:#EE4C2C;}
+  .bg-sklearn{background:#F89939;}
+  .bg-keras{background:#D00000;}
+  .bg-pandas{background:#150458;}
+  .bg-numpy{background:#013243;}
+  .bg-matplotlib{background:#11557C;}
+  .bg-seaborn{background:#3776AB;}
+  .bg-mlflow{background:#0194E2;}
+  .bg-streamlit{background:#FF4B4B;}
+  .bg-ml{background:#2E7D6B;}
+  .bg-dl{background:#6A4FA0;}
+  .bg-mlops{background:#C97B2E;}
+  .bg-soft{background:#3A6B8A;}
   .chip:hover{
     transform:translateY(-2px);
     background:var(--teal);
@@ -627,65 +668,65 @@
       <div class="skill-cat reveal">
         <h3 class="skill-cat-title"><span class="skill-cat-num">01</span>Programming Languages</h3>
         <div class="skill-chips">
-          <span class="chip skill-chip" style="animation-delay:.02s">Python</span>
-          <span class="chip skill-chip" style="animation-delay:.07s">C++</span>
-          <span class="chip skill-chip" style="animation-delay:.12s">C</span>
+          <span class="skill-badge bg-python skill-chip" style="animation-delay:.02s"><i class="devicon-python-plain"></i>Python</span>
+          <span class="skill-badge bg-cpp skill-chip" style="animation-delay:.07s"><i class="devicon-cplusplus-plain"></i>C++</span>
+          <span class="skill-badge bg-c skill-chip" style="animation-delay:.12s"><i class="devicon-c-plain"></i>C</span>
         </div>
       </div>
 
       <div class="skill-cat reveal reveal-delay-1">
         <h3 class="skill-cat-title"><span class="skill-cat-num">02</span>Machine Learning</h3>
         <div class="skill-chips">
-          <span class="chip skill-chip" style="animation-delay:.02s">Supervised &amp; Unsupervised Learning</span>
-          <span class="chip skill-chip" style="animation-delay:.07s">Time Series Analysis</span>
-          <span class="chip skill-chip" style="animation-delay:.12s">Reinforcement Learning</span>
-          <span class="chip skill-chip" style="animation-delay:.17s">Feature Engineering</span>
-          <span class="chip skill-chip" style="animation-delay:.22s">Model Evaluation</span>
-          <span class="chip skill-chip" style="animation-delay:.27s">Hyperparameter Tuning</span>
+          <span class="skill-badge bg-ml skill-chip" style="animation-delay:.02s"><i class="fa-solid fa-diagram-project"></i>Supervised &amp; Unsupervised Learning</span>
+          <span class="skill-badge bg-ml skill-chip" style="animation-delay:.07s"><i class="fa-solid fa-chart-line"></i>Time Series Analysis</span>
+          <span class="skill-badge bg-ml skill-chip" style="animation-delay:.12s"><i class="fa-solid fa-robot"></i>Reinforcement Learning</span>
+          <span class="skill-badge bg-ml skill-chip" style="animation-delay:.17s"><i class="fa-solid fa-sliders"></i>Feature Engineering</span>
+          <span class="skill-badge bg-ml skill-chip" style="animation-delay:.22s"><i class="fa-solid fa-square-poll-vertical"></i>Model Evaluation</span>
+          <span class="skill-badge bg-ml skill-chip" style="animation-delay:.27s"><i class="fa-solid fa-gears"></i>Hyperparameter Tuning</span>
         </div>
       </div>
 
       <div class="skill-cat reveal reveal-delay-2">
         <h3 class="skill-cat-title"><span class="skill-cat-num">03</span>Deep Learning</h3>
         <div class="skill-chips">
-          <span class="chip skill-chip" style="animation-delay:.02s">CNNs</span>
-          <span class="chip skill-chip" style="animation-delay:.07s">Transfer Learning</span>
-          <span class="chip skill-chip" style="animation-delay:.12s">Model Ensembling</span>
-          <span class="chip skill-chip" style="animation-delay:.17s">Transformers</span>
-          <span class="chip skill-chip" style="animation-delay:.22s">Fine-Tuning</span>
+          <span class="skill-badge bg-dl skill-chip" style="animation-delay:.02s"><i class="fa-solid fa-layer-group"></i>CNNs</span>
+          <span class="skill-badge bg-dl skill-chip" style="animation-delay:.07s"><i class="fa-solid fa-share-nodes"></i>Transfer Learning</span>
+          <span class="skill-badge bg-dl skill-chip" style="animation-delay:.12s"><i class="fa-solid fa-object-group"></i>Model Ensembling</span>
+          <span class="skill-badge bg-dl skill-chip" style="animation-delay:.17s"><i class="fa-solid fa-wave-square"></i>Transformers</span>
+          <span class="skill-badge bg-dl skill-chip" style="animation-delay:.22s"><i class="fa-solid fa-wrench"></i>Fine-Tuning</span>
         </div>
       </div>
 
       <div class="skill-cat reveal reveal-delay-3">
         <h3 class="skill-cat-title"><span class="skill-cat-num">04</span>Libraries &amp; Frameworks</h3>
         <div class="skill-chips">
-          <span class="chip skill-chip" style="animation-delay:.02s">TensorFlow</span>
-          <span class="chip skill-chip" style="animation-delay:.07s">PyTorch</span>
-          <span class="chip skill-chip" style="animation-delay:.12s">Scikit-learn</span>
-          <span class="chip skill-chip" style="animation-delay:.17s">Keras</span>
-          <span class="chip skill-chip" style="animation-delay:.22s">Pandas</span>
-          <span class="chip skill-chip" style="animation-delay:.27s">NumPy</span>
-          <span class="chip skill-chip" style="animation-delay:.32s">Matplotlib</span>
-          <span class="chip skill-chip" style="animation-delay:.37s">Seaborn</span>
+          <span class="skill-badge bg-tensorflow skill-chip" style="animation-delay:.02s"><i class="devicon-tensorflow-original"></i>TensorFlow</span>
+          <span class="skill-badge bg-pytorch skill-chip" style="animation-delay:.07s"><i class="devicon-pytorch-original"></i>PyTorch</span>
+          <span class="skill-badge bg-sklearn skill-chip" style="animation-delay:.12s"><i class="devicon-scikitlearn-plain"></i>Scikit-learn</span>
+          <span class="skill-badge bg-keras skill-chip" style="animation-delay:.17s"><i class="devicon-keras-plain"></i>Keras</span>
+          <span class="skill-badge bg-pandas skill-chip" style="animation-delay:.22s"><i class="devicon-pandas-original"></i>Pandas</span>
+          <span class="skill-badge bg-numpy skill-chip" style="animation-delay:.27s"><i class="devicon-numpy-original"></i>NumPy</span>
+          <span class="skill-badge bg-matplotlib skill-chip" style="animation-delay:.32s"><i class="devicon-matplotlib-plain"></i>Matplotlib</span>
+          <span class="skill-badge bg-seaborn skill-chip" style="animation-delay:.37s"><i class="devicon-seaborn-plain"></i>Seaborn</span>
         </div>
       </div>
 
       <div class="skill-cat reveal">
         <h3 class="skill-cat-title"><span class="skill-cat-num">05</span>MLOps &amp; Tools</h3>
         <div class="skill-chips">
-          <span class="chip skill-chip" style="animation-delay:.02s">MLflow</span>
-          <span class="chip skill-chip" style="animation-delay:.07s">Model Deployment</span>
-          <span class="chip skill-chip" style="animation-delay:.12s">Streamlit</span>
+          <span class="skill-badge bg-mlflow skill-chip" style="animation-delay:.02s"><i class="devicon-mlflow-plain"></i>MLflow</span>
+          <span class="skill-badge bg-mlops skill-chip" style="animation-delay:.07s"><i class="fa-solid fa-rocket"></i>Model Deployment</span>
+          <span class="skill-badge bg-streamlit skill-chip" style="animation-delay:.12s"><i class="devicon-streamlit-plain"></i>Streamlit</span>
         </div>
       </div>
 
       <div class="skill-cat reveal reveal-delay-1">
         <h3 class="skill-cat-title"><span class="skill-cat-num">06</span>Soft Skills</h3>
         <div class="skill-chips">
-          <span class="chip skill-chip" style="animation-delay:.02s">Communication</span>
-          <span class="chip skill-chip" style="animation-delay:.07s">Teamwork &amp; Collaboration</span>
-          <span class="chip skill-chip" style="animation-delay:.12s">Time Management</span>
-          <span class="chip skill-chip" style="animation-delay:.17s">Adaptability</span>
+          <span class="skill-badge bg-soft skill-chip" style="animation-delay:.02s"><i class="fa-solid fa-comments"></i>Communication</span>
+          <span class="skill-badge bg-soft skill-chip" style="animation-delay:.07s"><i class="fa-solid fa-people-group"></i>Teamwork &amp; Collaboration</span>
+          <span class="skill-badge bg-soft skill-chip" style="animation-delay:.12s"><i class="fa-solid fa-clock"></i>Time Management</span>
+          <span class="skill-badge bg-soft skill-chip" style="animation-delay:.17s"><i class="fa-solid fa-arrows-rotate"></i>Adaptability</span>
         </div>
       </div>
 
@@ -911,7 +952,6 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Mohamed Eslam Metwally</span>
-    <span>Built with HTML · CSS · JS — no framework</span>
   </div>
 </footer>
 
