@@ -137,6 +137,21 @@
     max-width:760px;
   }
 
+  .hero-name{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:clamp(1.3rem, 2.4vw, 1.7rem);
+    color:var(--paper);
+    letter-spacing:-0.01em;
+    margin-bottom:6px;
+  }
+  .hero-faculty{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--muted);
+    margin-bottom:26px;
+  }
+
   .eyebrow{
     font-family:'JetBrains Mono', monospace;
     font-size:12px;
@@ -579,7 +594,9 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow reveal in">AI / ML Engineer — Zagazig, Egypt</div>
+        <div class="hero-name reveal in">Mohamed Eslam Metwally</div>
+        <div class="hero-faculty reveal in reveal-delay-1">Faculty of Artificial Intelligence, Zagazig University</div>
+        <div class="eyebrow reveal in reveal-delay-1">AI / ML Engineer — Zagazig, Egypt</div>
         <h1 class="reveal in">Building models that <span class="accent">ship</span>, not just notebooks that run.</h1>
         <p class="lede reveal in reveal-delay-1">
           I design, train, and deploy deep learning systems end to end — from raw data to a
